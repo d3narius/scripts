@@ -31,7 +31,7 @@ function getTestFailuresByInstance() {
     
     for(var j = 0; j < numRows; j++) {
       var testCase = rangeValue[j][0];
-      if (testCase.indexOf("test") == 0) {
+      if (testCase.indexOf("test") >= 0) {
         if(testCase in testMap)
           testMap[testCase] = testMap[testCase] +"|"+sheetName;
         else
